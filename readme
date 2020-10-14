@@ -1,2 +1,4 @@
 
-python3 train_base_channel_skip_new_gate.py train densenet121 --data folder_of_imagnet --resume checkpoint --minimum 65 --beta 4e-6 --lr 0.01 --save-folder folder_to_save --batch-size 512
+CUDA_VISIBLE_DEVICES=x python3 train_base_channel_skip_new_gate.py train densenet121 --data folder_of_imagnet --resume checkpoint --minimum specified_computation_percentage --beta 4e-6 --lr 0.01 --save-folder folder_to_save --batch-size 512
+
+--data is the directory where imagenet dataset is located, --minimum is the desired computation percentage, --save-folder is the directory to save the trained model.
